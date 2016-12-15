@@ -13,6 +13,10 @@ body {
     background-size: 1122px auto;
 }
 
+.pages-bg {
+    background: #000000 url("../img/background-texture.jpg") 100%;
+    color: #000000;
+}
 .clearfix::after {
     content: "";
     
@@ -46,6 +50,10 @@ body {
     margin-left: auto;
     margin-bottom: 25px;
 }
+
+/* ____________________INDEX___________________ */
+
+
 .features {
     margin-bottom: 80px;
 }
@@ -72,6 +80,36 @@ body {
     width: 300px;
     min-height: 330px; 
 }
+/* ____________________INDEX___________________ */
+
+
+/* ____________________ITEM___________________ */
+
+
+.item-content {
+    margin-bottom: 35px;
+    padding: 50px 17px;
+}
+.item-content-left {
+    float: left;
+    width: 480px;
+   min-height: 330px; 
+}
+
+.item-content-right {
+    float: right;
+    width: 400px;
+    min-height: 330px; 
+}
+.header {
+        padding-top: 40px;
+    }
+
+.mini-pict {
+    display: inline;
+}
+/* ____________________ITEM___________________ */
+
 .main-footer {
     padding-top: 60px;
     padding-bottom: 40px;
