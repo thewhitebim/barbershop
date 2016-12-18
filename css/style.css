@@ -32,6 +32,7 @@ body {
 
 .main-header {
     margin-bottom: 60px;
+    background: #000000;
 }
 .main-navigation {
     float: left;
@@ -102,13 +103,41 @@ body {
     min-height: 330px; 
 }
 .header {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
 .mini-pict {
     display: inline;
 }
 /* ____________________ITEM___________________ */
+
+
+/* ____________________SHOP___________________ */
+
+
+.shop-content-left {
+    padding: 0px;
+     float: left;
+    width: 185px;
+   min-height: 330px;
+}
+.shop-content-right {
+padding: 0px;
+    float: left;
+    width: 240px;
+   min-height: 400px;
+}
+
+.shop-content-right-column {
+    padding: 0px;
+    width: 720px;
+    float: right;
+}
+.pages {
+    float: left;
+}
+
+/* ____________________SHOP___________________ */
 
 .main-footer {
     padding-top: 60px;
