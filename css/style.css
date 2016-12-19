@@ -139,6 +139,33 @@ padding: 0px;
 
 /* ____________________SHOP___________________ */
 
+/* ____________________PRICE-LIST___________________ */
+
+.price-title{
+    margin-bottom: 60px;
+}
+
+.price-content-left {
+    margin-bottom: 60px;
+     float: left;
+    width: 400px;
+   min-height: 40px;
+}
+.price-content-left-header {
+     padding: 0px;
+     float: left;
+    width: 900px;
+}
+.price-content-right {
+   margin-bottom: 60px;
+     float: right;
+    width: 480px;
+   min-height: 40px;
+}
+
+
+/* ____________________PRICE-LIST___________________ */
+
 .main-footer {
     padding-top: 60px;
     padding-bottom: 40px;
