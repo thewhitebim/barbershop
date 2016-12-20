@@ -9,10 +9,8 @@ body {
     font-weight: 700;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-transform: uppercase;
-    
-    color: #fff;
-    background: #000000 url("../img/body-bg.jpg") no-repeat 50% 3px;
-    background-size: 1122px auto;
+    color: #ffffff;
+    background: #000000 url("../img/body-bg.jpg") no-repeat center top;
 }
 
 .pages-bg {
@@ -33,6 +31,7 @@ body {
 }
 
 .main-header {
+    color: #ffffff;
     margin-bottom: 60px;
     background: #000000;
 }
@@ -41,30 +40,109 @@ body {
     width: 780px;
     min-height: 70px;
 }
+.main-navigation a {
+    display: block;
+    padding: 25px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.main-navigation a:hover {
+    background: #242424;
+}
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+.main-navigation li {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+}
 .user-block {
     float: right;
-    width: 140px;
+    width: 107px;
     min-height: 70px;
 }
-.index-logo {
-    height: 204px;
-    width: 368px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
+.login {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px 20px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.login:hover {
+    background: #242424;
+}
+.login::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+      width: 18px;
+    height: 18px;
+    background: transparent url("img/sprite.png") no-repeat;
+    background-position: -1px -15px;
+    opacity: 0.3;
+}
+.login:hover::before {
+    opacity: 1;
 }
 
 /* ____________________INDEX___________________ */
 
+.index-logo {
+    height: 204px;
+    width: 368px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.index-logo img {
+    height: 204px;
+    width: 368px;
+}
 
 .features {
     margin-bottom: 80px;
+}
+.features-name {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+}
+
+features-item p{
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.features-name::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
 }
 .features-item {
     float: left;
     width: 300px;
     margin-right: 20px;
     min-height: 175px;
+    text-align: center;
 }
 .features-item:last-child {
     margin-right: 0;
@@ -72,16 +150,110 @@ body {
 .index-content {
     margin-bottom: 35px;
     padding: 50px 80px;
+    color: #000000;
+    background: url("../img/index-content-shadow.png")no-repeat center, 
+        #f8f5f2 url("../img/background-texture.jpg");
+}
+.index-content p{
+    margin: 0;
+    margin-bottom: 25px;
+}
+.news-preview {
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+    list-style: none;
+}
+.news-preview li {
+    margin-bottom: 25px;
+}
+.news-preview p {
+    margin-bottom: 0;
+}
+.news-preview time {
+    text-transform: none;
+    font-weight: 400;
+}
+.index-content-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
 }
 .index-content-left {
     float: left;
     width: 380px;
-   min-height: 330px; 
 }
 .index-content-right {
     float: right;
     width: 300px;
-    min-height: 330px; 
+}
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 33px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+    background-color: #663d15;
+}
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background-color: #000000;
+}
+.gallery {
+    position: relative;
+    height: 260px;
+}
+.gallery-content {
+    margin: 0;
+    height: 164px;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+.gallery-content img {
+    height: 164px;
+    width: 286px;
+}
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0px;
+}
+.gallery-prev {
+    left: 0;
+}
+.gallery-next {
+    right: 0;
+}
+.appointment-form input {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
 }
 /* ____________________INDEX___________________ */
 
