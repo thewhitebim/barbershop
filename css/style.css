@@ -1,7 +1,7 @@
 html,
 body {
     min-width: 960px;
-    min-height: 1750px;
+    
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -10,13 +10,16 @@ body {
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-transform: uppercase;
     color: #ffffff;
+    
+}
+.main {
     background: #000000 url("../img/body-bg.jpg") no-repeat center top;
 }
-
-.pages-bg {
-    background: #000000 url("../img/background-texture.jpg") 100%;
+.page {
+    background: #f8f5f2 url("../img/background-texture.jpg") 100%;
     color: #000000;
 }
+
 .clearfix::after {
     content: "";
     
@@ -87,8 +90,8 @@ body {
     left: 20px;
       width: 18px;
     height: 18px;
-    background: transparent url("img/sprite.png") no-repeat;
-    background-position: -1px -15px;
+    background: transparent url("../img/sprite.png") no-repeat;
+    background-position: 0px 0px;
     opacity: 0.3;
 }
 .login:hover::before {
@@ -102,6 +105,7 @@ body {
     width: 368px;
     margin: 0 auto;
     margin-bottom: 25px;
+    margin-top: 60px;
 }
 .index-logo img {
     height: 204px;
@@ -246,6 +250,11 @@ features-item p{
     right: 0;
 }
 .appointment-form input {
+    float: left;
+    width: 106px;
+    padding: 7px 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 24px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -255,6 +264,17 @@ features-item p{
     border: 2px solid #000000;
     outline: none;
 }
+.appointment-form input:focus {
+    border: 2px solid #663d15;
+}
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+.appointment-form .btn {
+    width: 100%;
+    clear: both;
+} 
+
 /* ____________________INDEX___________________ */
 
 
@@ -277,7 +297,7 @@ features-item p{
     min-height: 330px; 
 }
 .header {
-        padding-top: 20px;
+        margin-top: 60px;
     }
 
 .mini-pict {
@@ -341,23 +361,78 @@ padding: 0px;
 /* ____________________PRICE-LIST___________________ */
 
 .main-footer {
+    margin: 0;
     padding-top: 60px;
     padding-bottom: 40px;
     margin-bottom: 65px;
+    color: #ffffff;
+    background: #252525 url("../img/footer-background-texture.jpg");
+}
+.footer-contacts a {
+    color: #ffffff;
+}
+.footer-contacts a:hover {
+    text-decoration: none;
 }
 .footer-contacts {
     float: left;
     width: 320px;
     margin-right: 60px;
-    min-height: 90px;
 }
 .footer-social {
     float: left;
     width: 180px;
     min-height: 90px;
+    text-align: center;
 }
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+    
+} 
+.social-btn {
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    background: #000000 url("../img/sprite.png") no-repeat center;
+    transition: background-position 0.5s, background-color 0.5s;
+} 
+.social-btn:hover {
+    background-color: #ffffff;
+}
+
+.social-btn-vk {
+    background-position: -65px 13px;
+}
+.social-btn-fb {
+    background-position: -25px 10px;
+}
+.social-btn-inst {
+    background-position: -118px 10px;
+}
+.social-btn-vk:hover {
+    background-position: -65px -23px;
+}
+.social-btn-fb:hover {
+    background-position: -25px -30px;
+}
+.social-btn-inst:hover {
+    background-position: -118px -28px;
+}
+
 .footer-copyright {
     float: right;
-    width: 180px;
-    min-height: 90px;
+    max-width: 180px;
+}
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+} 
+.footer-copyright .btn {
+    margin-right: 0;
 }
