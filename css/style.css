@@ -12,6 +12,10 @@ body {
     color: #ffffff;
     
 }
+img {
+    width: 100%;
+    height: auto;
+}
 .main {
     background: #000000 url("../img/body-bg.jpg") no-repeat center top;
 }
@@ -318,20 +322,79 @@ features-item p{
 
 
 .item-content {
-    margin-bottom: 35px;
-    padding: 50px 17px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 0px;
 }
 .item-content-left {
+    padding: 0px;
+    padding-left: 10px;
+    margin: 0px;
     float: left;
-    width: 480px;
+    width: 470px;
    min-height: 330px; 
+}
+.item-content-left img {
+    padding: 0px;
+    margin: 0px;
 }
 
 .item-content-right {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
     float: right;
-    width: 400px;
+    width: 390px;
     min-height: 330px; 
+    margin-left: 50px;
 }
+
+.item-content-right h3 {
+    margin-bottom: 40px;
+}
+.item-content-right .buy {
+    padding: 0px;
+    margin-bottom: 60px;
+}
+.item-content-right .description {
+    margin-bottom: 40px;
+}
+.article {
+    position: absolute;
+    top: 17px;
+    right: 0px;
+    color: gray;
+}
+.price-block {
+    margin-bottom: 60px;
+}
+
+.mini-pict {
+    padding: 0px;
+    list-style: none;
+}
+.mini-pict li {
+    display: inline-block;
+    float: left;
+    height: 149px;
+    padding: 0px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+.mini-pict li:last-child {
+    margin-right: 0px;
+}
+.mini-pict li:first-child {
+    margin-left: 0px;
+}
+.main-pict {
+    width: 460px;
+    height: 498px;
+}
+.main-pict, .mini {
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+}
+
 .header {
         margin-top: 60px;
     }
@@ -344,9 +407,13 @@ features-item p{
 
 /* ____________________SHOP___________________ */
 
+.shop-content {
+    margin-top: 50px;
+}
 
 .shop-content-left {
     padding: 0px;
+    padding-right: 30px;
      float: left;
     width: 185px;
    min-height: 330px;
@@ -356,18 +423,246 @@ padding: 0px;
     float: left;
     width: 240px;
    min-height: 400px;
+    
 }
 
 .shop-content-right-column {
     padding: 0px;
+    margin: 0px;
     width: 720px;
     float: right;
 }
-.pages {
-    float: left;
+.shop-content-right .product {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    min-width: 220px;
+    height: 287px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    
+}
+.product img {
+    padding: 0px;
+    margin: 0px;
+}
+div .title {
+    padding: 0px;
+    margin: 0px;
+     height: 50px;
 }
 
-/* ____________________SHOP___________________ */
+.title a {
+      display: block;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+    height: 50px;
+}
+.product .category {
+    display: block;
+    margin: 0px;
+    min-width: 184px;
+    padding: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   text-transform:none;
+}
+span .upper {
+    text-transform:uppercase;
+}
+ 
+.product a .btn{
+    color: white;
+}
+.buy {
+    margin: 0px;
+    padding: 16px;
+    padding-top: 10px;
+    width: 188px;
+    height: 43px;
+}
+.buy ul {
+    padding: 0px;
+     margin: 0px;
+    list-style: none;
+    float: left;
+}
+.buy li {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+.price {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    min-width: 109px;
+     height: 33px;
+    display: inline-block;
+    padding-top: 10px;
+    background-color: #e5e5e5;
+}
+.buy ul .btn {
+    margin: 0px;
+    padding: 0px;
+    min-width: 78px;
+    height: 33px;
+    display: inline-block;
+    padding-top: 10px;
+}
+.pages-row {
+    float: left;
+    margin: 0px;
+    margin-top: 28px;
+    padding: 0px;
+    min-width: 193px;
+    min-height: 43px;
+    margin-bottom: 49px;
+}
+ .pages-row ul {
+     padding-left: 0px;
+     margin: 0px;
+    list-style: none;
+    float: left;
+    
+}
+.pages-row li {
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: top;
+    margin-left: 0px;
+}
+.pages-row a {
+    display: block;
+    float: left;
+    padding: 0px;
+     width: 43px;
+     height: 43px;
+    color: #ffffff;
+     margin-right: 7px;
+    text-align: center;
+     
+}
+.pages-row .btn {
+    width: 43px;
+     height: 33px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.pages-row .active .btn {
+    background-color: white;
+    color: black;
+}
+
+/*.shop-content-right-column .pages-row::after {
+     content: "";
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+   bottom: -10px;
+    left: 100px;
+    width:1000px;
+    height: 20px;
+    background-color: transparent;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+*/
+
+fieldset {
+    border: none;
+}
+ .legend{
+    padding-bottom: 10px;
+}
+fieldset ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 40px;
+}
+fieldset ul li {
+    display: inline-block; 
+    padding-top: 0px;
+    padding-bottom: 10px;
+    
+}
+.brands input[type="checkbox"] {
+    display: none;
+}
+.brands {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.brands:hover {
+    color: #663d15;
+}
+.brands input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000000;
+}
+.brands input[type="checkbox"]:checked + .checkbox-indicator::before,
+.brands input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+}
+.brands input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+.brands input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
+
+
+li .category input[type="radio"] {
+    display: none;
+}
+li .category {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+li .category:hover {
+    color: #663d15;
+}
+li .category input[type="radio"] + .radio-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+li .category input[type="radio"]:checked + .radio-indicator::before,
+li .category input[type="radio"]:checked + .radio-indicator::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+/*___________SHOP___________________ */
 
 
 
@@ -537,6 +832,7 @@ inner-columns {
     color: #ffffff;
     background: #252525 url("../img/footer-background-texture.jpg");
 }
+
 .footer-contacts a {
     color: #ffffff;
 }
@@ -611,6 +907,7 @@ inner-columns {
 }
 
 /*Всплывающая форма*/
+
 .modal-content {
     position: fixed;
     top: 120px;
@@ -624,6 +921,7 @@ padding: 50px 80px;
     background: #f8f3f0 url("../img/background-texture.jpg");
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
+
 .modal-content-map {
     position: fixed;
     top: 50%;
@@ -638,6 +936,7 @@ padding: 50px 80px;
     border: 7px solid white;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -648,8 +947,10 @@ padding: 50px 80px;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
-
-
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
+}
 .modal-content-close {
     position: absolute;
     top: 0;
@@ -765,3 +1066,18 @@ padding: 50px 80px;
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
     transform: rotate(-45deg);
 }
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+    
+}
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+.modal-error {
+    animation: shake 0.6s;
+} 
